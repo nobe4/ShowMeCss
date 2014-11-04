@@ -11,7 +11,7 @@
           else
               css.push(rule.selectorText+' {\n'+rule.style.cssText+'\n}\n');
         }
-      }
+      } else {console.log("cannot get styles");}
   }
   
   console.log(css.join('\n'));
